@@ -1,0 +1,40 @@
+<style>
+    #colorsList {
+        overflow-y: auto;
+        height: 200px;
+        width: 120px;
+        background-color: #eee;
+    }
+    .colorRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 4px;
+        margin-bottom: -4px;
+    }
+    .colorRow input {
+        flex: 1;
+    }
+    .colorRow div {
+        flex: 1;
+        outline: 1px solid black;
+    }
+</style>
+<div id='testID'>
+    Hello
+</div>
+<div id="colorsList">
+    <div class="colorRow">
+        <div id="color-value-1" style="background-color: #f6b73c"></div>
+        <input type="color" id="color-option-1" value="#aaa"/>
+    </div>
+    <div class="colorRow">
+        <div id="color-value-1" style="background-color: #f6b73c"></div>
+        <input type="color" id="color-option-1" value="#aaa"/>
+    </div>
+</div>
+<div>
+    <button id="updateColors">Update Colors</button>
+</div>
+
+<script src="popup.js"></script>
